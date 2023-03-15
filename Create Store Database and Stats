@@ -1,0 +1,40 @@
+
+/** Merchandise Inventory:
+Beanie
+Hoodie
+Totebag
+Tshirt
+Socks
+Jacket
+Patches
+Pins
+Magazine
+Mug
+Poster
+Vinyl art
+Stickers
+Prints
+Tapestry
+**/
+
+CREATE TABLE merchandise (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, category INTEGER, price INTEGER, sold INTEGER);
+
+INSERT INTO merchandise VALUES (1, "Hoodie", 2, "clothing", 50, 5);
+INSERT INTO merchandise VALUES (2, "Tshirt", 5, "clothing", 30, 14);
+INSERT INTO merchandise VALUES (3, "Beanie", 3, "clothing", 20, 7); 
+INSERT INTO merchandise VALUES (4, "Jacket", 1, "clothing", 100, 12);
+INSERT INTO merchandise VALUES (5, "Socks", 7, "clothing", 10, 14);
+INSERT INTO merchandise VALUES (6, "Totebag", 4, "clothing", 15, 27);
+INSERT INTO merchandise VALUES (7, "Patches", 12, "accessories", 5, 58);
+INSERT INTO merchandise VALUES (8, "Pins", 4, "accessories", 3, 12);
+INSERT INTO merchandise VALUES (9, "Mug", 5, "accessories", 7, 3);
+INSERT INTO merchandise VALUES (10, "Vinyl art", 3, "accessories", 45, 7);
+INSERT INTO merchandise VALUES (11, "Magazine", 12, "accessories", 25, 48);
+INSERT INTO merchandise VALUES (12, "Poster", 5, "accessories", 12, 5);
+INSERT INTO merchandise VALUES (13, "Prints", 8, "accessories", 7, 12);
+INSERT INTO merchandise VALUES (14, "Tapestry", 2, "accessories", 30, 4);
+INSERT INTO merchandise VALUES (15, "Stickers", 25, "accessories", 3, 16);
+
+SELECT * FROM merchandise ORDER BY price;
+
+SELECT SUM(sold) FROM merchandise;
