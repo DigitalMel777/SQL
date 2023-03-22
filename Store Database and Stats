@@ -17,7 +17,13 @@ Prints
 Tapestry
 **/
 
-CREATE TABLE merchandise (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, category INTEGER, price INTEGER, sold INTEGER);
+CREATE TABLE merchandise 
+        (id INTEGER PRIMARY KEY, 
+         name TEXT, 
+         quantity INTEGER, 
+         category INTEGER, 
+         price INTEGER, 
+         sold INTEGER);
 
 INSERT INTO merchandise VALUES (1, "Hoodie", 2, "clothing", 50, 5);
 INSERT INTO merchandise VALUES (2, "Tshirt", 5, "clothing", 30, 14);
